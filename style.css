@@ -1,0 +1,19 @@
+.hidden {
+  opacity: 0;
+}
+
+#success-message {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  transition: opacity 0.5s ease-out;
+}
+
+#success-message p {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}/*# sourceMappingURL=style.css.map */
