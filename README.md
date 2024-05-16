@@ -4,7 +4,7 @@ Hi 👋 My name is Stelios Tiantsis
 Full Stack Developer
 --------------------
 
-I've been learning to code for a few months now, after transitioning from a completely different career.
+Passionate Junior Full-Stack Developer with a childhood dream to pursue a career as a developer.
 
 * 🌍  I'm based in Thessaloniki, Greece
 * ✉️  You can contact me at [stysns@outlook.com](mailto:stysns@outlook.com)
