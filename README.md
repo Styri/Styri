@@ -8,7 +8,7 @@ I've been learning to code for a few months now, after transitioning from a comp
 
 * 🌍  I'm based in Thessaloniki, Greece
 * ✉️  You can contact me at [stysns@outlook.com](mailto:stysns@outlook.com)
-* 🧠  I'm learning Java, Javascript and Bootstrap
+* 🧠  I'm currently learning Java, Javascript and Bootstrap
 * 🤝  I'm open to collaborating on Projects for beginners.
 
 ### Skills
