@@ -66,3 +66,23 @@ p a{
     text-decoration: none;
 }
 
+@media screen and (max-width: 991px) {
+    .nav-item a{
+        transition: transform 0.1s ease-in-out;
+    }
+    .nav-item a:active{
+        transform: scale(1.08);
+    }
+    .navbar-brand{
+        transition: transform 0.1s ease-in-out;
+    }
+    .navbar-brand:active{
+        transform: scale(1.02);
+    }
+    .nav-item a:hover{
+        background-color: inherit;
+    }
+    .navbar-brand:hover{
+        background-color: inherit;
+    }
+}
