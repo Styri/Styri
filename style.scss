@@ -54,7 +54,7 @@ h1, h2{
     display: inline-block;
     position: relative;
     z-index: 1;
-    padding: 0.5em;
+    padding: 1em;
     transition: all 0.25s;
 }
 
@@ -65,3 +65,4 @@ h1, h2{
 container-fluid bg-info-subtle text-info-emphasis{
     background-color: #18ba43;
 }
+
