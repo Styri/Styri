@@ -170,51 +170,16 @@
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"
     ></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
-    <script>
-      const lightModeBtn = document.getElementById("lightModeBtn");
-      const darkModeBtn = document.getElementById("darkModeBtn");
-      const htmlElement = document.documentElement;
+    <script src="successWindowMsg.js"></script>
+    
+    <script src="darkMode.js"></script>
 
-      function toggleTheme(btn) {
-        const currentTheme = htmlElement.getAttribute("data-bs-theme");
-        const newTheme = btn.id === "lightModeBtn" ? "light" : "dark";
-
-        if (currentTheme !== newTheme) {
-          htmlElement.setAttribute("data-bs-theme", newTheme);
-        }
-
-        lightModeBtn.classList.remove("active");
-        darkModeBtn.classList.remove("active");
-        btn.classList.add("active");
-      }
-
-      lightModeBtn.addEventListener("click", function () {
-        toggleTheme(this);
-      });
-
-      darkModeBtn.addEventListener("click", function () {
-        toggleTheme(this);
-      });
-    </script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
-    <script>
-      window.onload = function () {
-        // check url query to see if the form was submitted or not
-        const urlParams = new URLSearchParams(window.location.search);
-        // if it was, then show success message
-        if (urlParams.get("redirect") === "true") {
-          const successMessage = document.getElementById("success-message");
-          successMessage.classList.remove("hidden");
-          setTimeout(function () {
-            successMessage.classList.add("hidden");
-          }, 3500);
-        }
-      };
-    </script>
   </body>
 </html>
