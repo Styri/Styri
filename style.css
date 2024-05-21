@@ -65,4 +65,8 @@ h1, h2 {
 
 container-fluid bg-info-subtle text-info-emphasis {
   background-color: #18ba43;
+}
+
+p a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
