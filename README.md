@@ -1,14 +1,12 @@
-Hi 👋 My name is Stelios Tiantsis
-=================================
+Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Stelios Tiantsis
+========================================================================================================================================
 
 Full Stack Developer
 --------------------
 
-I've been learning to code for a few months now, after transitioning from a completely different career.
-
 * 🌍  I'm based in Thessaloniki, Greece
 * ✉️  You can contact me at [stysns@outlook.com](mailto:stysns@outlook.com)
-* 🧠  I'm currently learning Java and Javascript
+* 🧠  I'm learning Java and Javascript
 * 🤝  I'm open to collaborating on Projects for beginners.
 
 ### Skills
