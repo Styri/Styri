@@ -1,8 +1,8 @@
 Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Stelios Tiantsis
 ========================================================================================================================================
 
-Full Stack Developer
---------------------
+Junior Full Stack Developer
+---------------------------
 
 * 🌍  I'm based in Thessaloniki, Greece
 * ✉️  You can contact me at [stysns@outlook.com](mailto:stysns@outlook.com)
