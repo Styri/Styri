@@ -1,43 +1,78 @@
-.hidden{
+@mixin transition($properties, $duration, $ease) {
+    transition: $properties, $duration, $ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.hidden {
     opacity: 0;
 }
-#success-message{
+
+#success-message {
     display: flex;
     justify-content: center;
     position: absolute;
     top: 80px;
     width: 100%;
-    transition: opacity 0.5s ease-out;
+    @include transition(opacity, 0.5s, ease-out);
+
+    p {
+        background-color: #d4edda;
+        color: #155724;
+        padding: 1rem;
+        border-radius: 0.25rem;
+    }
 }
 
-#success-message p{
-    background-color: #d4edda;
-    color: #155724;
-    padding: 1rem;
-    border-radius: 0.25rem;
-}
-
-h1, h2{
+h1,
+h2,
+#contactH3 {
     font-family: "Merienda", cursive;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
+    text-align: center;
 }
 
-.main-text{ 
-        font-family: "Comic Neue", cursive;
-        font-weight: 400;
-        font-style: normal;
-        margin: 20px;
+.btn {
+    border-radius: 0.25rem;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.container-fluid{
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+.container-fluid {
     background-color: rgb(132, 133, 133);
 }
 
-.nav-item{
-    justify-content: center;
-}
-
-.nav-item a{
+.navbar-brand,
+.nav-item a {
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -46,55 +81,53 @@ h1, h2{
     font-size: 20px;
 }
 
-.nav-item a:hover{
+.nav-item a:hover,
+.navbar-brand:hover {
     background-color: #ff5733;
 }
 
-.navbar-brand{
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    padding: 1em;
-    transition: all 0.25s;
-}
-
-.navbar-brand:hover{
-    background-color: #ff5733;
-}
-
-p a{
+p a {
     text-decoration: none;
 }
 
+.card-img-top {
+    border-radius: 0.25rem;
+}
+
+.container {
+    margin-top: 2rem;
+}
+
+.container h2 {
+    margin-bottom: 1.5rem;
+}
+
+#formSubmitButton {
+    margin-bottom: 30px;
+}
+
 @media screen and (max-width: 991px) {
-    .nav-item a{
-        transition: transform 0.1s ease-in-out;
+    .nav-item a {
+        @include transition(transform, 0.1s, ease-in-out);
     }
-    .nav-item a:active{
+
+    .nav-item a:active {
         transform: scale(1.08);
     }
-    .navbar-brand{
-        transition: transform 0.1s ease-in-out;
+
+    .navbar-brand {
+        @include transition(transform, 0.1s, ease-in-out);
     }
-    .navbar-brand:active{
+
+    .navbar-brand:active {
         transform: scale(1.02);
     }
-    .nav-item a:hover{
+
+    .nav-item a:hover {
         background-color: inherit;
     }
-    .navbar-brand:hover{
+
+    .navbar-brand:hover {
         background-color: inherit;
     }
 }
-
-@keyframes fadeIn {
-    0% { opacity: 0;  }
-    25% {opacity: 0.25;}
-    50% {opacity: 0.5;}
-    75% {opacity: 0.75;}
-    100% { opacity: 1; }
-  }
-
-  h1, h2, p {
-    animation: fadeIn 1.20s ease-in;
-  }
