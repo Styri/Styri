@@ -82,7 +82,7 @@ h2,
   padding: 1em;
   transition: all 0.25s;
   font-size: 20px;
-  color: black;
+  color: inherit !important;
 }
 .navbar-brand::after,
 .nav-item a::after {
