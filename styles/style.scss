@@ -30,6 +30,14 @@ body {
     }
 }
 
+#nav {
+    background-color: #0056b3;
+}
+
+#navDiv {
+    background-color: #ffffff;
+}
+
 h1,
 h2,
 #contactH3 {
@@ -79,12 +87,29 @@ h2,
     padding: 1em;
     transition: all 0.25s;
     font-size: 20px;
+    color: black !important;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #ff5733;
+        transition: width 0.3s;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
 }
 
-.nav-item a:hover,
-.navbar-brand:hover {
-    background-color: #ff5733;
-}
+// .nav-item a:hover,
+// .navbar-brand:hover {
+//     background-color: #ff5733;
+// }
 
 p a {
     text-decoration: none;

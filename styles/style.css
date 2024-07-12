@@ -25,6 +25,14 @@ body {
   border-radius: 0.25rem;
 }
 
+#nav {
+  background-color: #0056b3;
+}
+
+#navDiv {
+  background-color: #ffffff;
+}
+
 h1,
 h2,
 #contactH3 {
@@ -74,11 +82,23 @@ h2,
   padding: 1em;
   transition: all 0.25s;
   font-size: 20px;
+  color: black !important;
 }
-
-.nav-item a:hover,
-.navbar-brand:hover {
-  background-color: #ff5733;
+.navbar-brand::after,
+.nav-item a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ff5733;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+.navbar-brand:hover::after,
+.nav-item a:hover::after {
+  width: 100%;
 }
 
 p a {
