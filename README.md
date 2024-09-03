@@ -6,7 +6,7 @@ Junior Full Stack Developer
 
 * 🌍  I'm based in Thessaloniki, Greece
 * ✉️  You can contact me at [stysns@outlook.com](mailto:stysns@outlook.com)
-* 🧠  I'm learning Java and Node.js
+* 🧠  I'm learning MongoDB and Node.js
 * 🤝  I'm open to collaborating on projects for beginners.
 
 ### Skills
